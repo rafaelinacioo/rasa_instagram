@@ -1,8 +1,8 @@
-# **Deployment of the rasa chatbot on Instagram**
+# **Rasa chatbot on Instagram**
 
 ## **Overview**
 
-This document is intended to help you deploy your rasa Chatbot (Custom Connectors), on an Instagram page.
+This document is intended to help you to deploy your rasa Chatbot (Custom Connectors), for Instagram.
 
 ## **Instagram Setup**
 
@@ -10,17 +10,17 @@ First, you need to set up a [Facebook Page](https://www.facebook.com/business/pa
 
 ## Chatbot Rasa
 
-- In a Chatbot under development, create a folder with the name of connectors and a file inside the folder with the name of custom_instagram.py, so let's add the following code available below:
+- Create the directory `connectors` with an custom_instagram.py file inside, so add the code available below:
     
     File:
-    custom_instagram.py
+    [custom_instagram.py](https://github.com/rafaelinacioo/rasa_instagram/blob/main/connectors/custom_instagram.py)
     
 
 ![Untitled](./img/01.png)
 
 
 
-- Then we go to the file in the credentials.yml root, doing the following called foldername.filename.classname that is configured to return the name “instragram”:
+- Now, in the project root credentials.yml, create your connector `connectors.custom_instagram.InstagramInput` that is configured to return the name “instragram”:
 
 ![Untitled](./img/02.png)
 
@@ -69,14 +69,14 @@ Note: To show the profile in the field, when adding a tester, both must be frien
 
 ## **Reference**
 
-[https://rasa.com/docs/rasa/connectors/facebook-messenger/](https://rasa.com/docs/rasa/connectors/facebook-messenger/)
+- [Rasa Facebook Messenger](https://rasa.com/docs/rasa/connectors/facebook-messenger/)
 
-[https://developers.facebook.com/](https://developers.facebook.com/)
+- [Facebook Developers](https://developers.facebook.com/)
 
-[https://rasa.com/docs/rasa/messaging-and-voice-channels#testing-channels-on-your-local-machine](https://rasa.com/docs/rasa/messaging-and-voice-channels#testing-channels-on-your-local-machine)
+- [Rasa Connecting to A Channel](https://rasa.com/docs/rasa/messaging-and-voice-channels#testing-channels-on-your-local-machine)
 
-[https://developers.facebook.com/products/messenger/messenger-api-instagram/](https://developers.facebook.com/products/messenger/messenger-api-instagram/)
+- [Instagram API](https://developers.facebook.com/products/messenger/messenger-api-instagram/)
 
-[https://www.facebook.com/business/pages](https://www.facebook.com/business/pages)
+- [Facebook business](https://www.facebook.com/business/pages)
 
-[https://developers.facebook.com/docs/messenger-platform/webhook](https://developers.facebook.com/docs/messenger-platform/webhook)
+- [Instagram Webhook](https://developers.facebook.com/docs/messenger-platform/webhook)
