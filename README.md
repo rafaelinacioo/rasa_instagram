@@ -39,7 +39,7 @@ First, you need to set up a [Facebook Page](https://www.facebook.com/business/pa
 3. Create your page and select it in the dropdown menu for the **Token Generation**. The shown **Page Access Token** is the `page-access-token` needed later on.
 4. Locate the **App Secret** in the app dashboard under **Settings** → **Basic**. This will be your `secret`.
 5. Use the collected `secret` and `page-access-token` in your `credentials.yml`, and add a field called `verify` containing a string of your choice. Start `rasa run` with the `-credentials credentials.yml` option.
-6. Set up a **Webhook** and select at least the **messaging** and **messaging_postback** subscriptions. Insert your callback URL, which will look like `https://<host>:<port>/webhooks/facebook/webhook`, replacing the host and port with the appropriate values from your running Rasa X or Rasa Open Source server.
+6. Set up a **Webhook** and select at least the **messaging** and **messaging_postback** subscriptions. Insert your callback URL, which will look like `https://<host>:<port>/webhooks/instagram/webhook`, replacing the host and port with the appropriate values from your running Rasa X or Rasa Open Source server.
     
     Insert the **Verify Token** which has to match the `verify` entry in your `credentials.yml`.
     
